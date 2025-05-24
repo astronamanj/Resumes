@@ -1,0 +1,63 @@
+
+\documentclass[letterpaper,9pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+\usepackage{comment}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+
+\usepackage{simplecv}
+\usepackage{enumitem}
+
+\boldname{Jain}{Naman}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{Naman Jain}{
+    %Website: \website{example.com} \\ 
+    Email: \email{naman.jain@mail.mcgill.ca} \\
+    LinkedIn: \linkedin{naman-jain-966362163} \\
+    GitHub: \github{astronamanj}
+}
+
+% \headingphoto{Name Surname}{
+%     Website: \website{example.com} \\ 
+%     Email: \email{example@example.edu} \\
+%     LinkedIn: \linkedin{name-surname} \\
+%     GitHub: \github{example}
+% }{photo.jpg}
+
+% Page One
+\import{sections/}{education.tex}
+% \import{sections/}{publications.tex}
+
+\import{sections/}{awards.tex}
+\import{sections/}{publications.tex}
+\import{sections/}{conferences.tex}
+%\import{sections/}{presentations.tex}
+
+\import{sections/}{experience.tex}
+
+%\pagebreak
+
+% Page Two
+\import{sections/}{skills.tex}
+\import{sections/}{teaching.tex}
+
+
+\import{sections/}{outreach.tex}
+\import{sections/}{additionalexp.tex}
+\import{sections/}{training.tex}
+%\import{sections/}{references.tex}
+
+
+\end{document}
